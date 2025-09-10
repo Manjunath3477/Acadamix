@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import AuthCard from '../../components/common/AuthCard';
-import { GraduationCapIcon, MailIcon, UserIcon } from '../../components/icons/Icons';
+import { GraduationCapIcon, MailIcon, LockIcon, UserIcon } from '../../components/icons/Icons';
 
 const Register = ({ setPage, setUser }) => {
     const [role, setRole] = useState('student');
@@ -72,13 +72,14 @@ const Register = ({ setPage, setUser }) => {
                 </div>
                 
                 <div className="relative">
+                    <LockIcon className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-gray-400" />
                     <input 
                         id="password" 
                         type="password" 
                         required 
                         value={password} 
                         onChange={(e) => setPassword(e.target.value)} 
-                        className="w-full px-3 py-2.5 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500" 
+                        className="w-full pl-10 pr-3 py-2.5 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500" 
                         placeholder="Password (min. 6 characters)" 
                     />
                 </div>

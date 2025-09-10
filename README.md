@@ -130,3 +130,10 @@ Pull requests are welcome! For major changes, please open an issue first to disc
 - [React](https://react.dev/)
 - [Firebase](https://firebase.google.com/)
 - [Tailwind CSS](https://tailwindcss.com/)
+
+## frontend
+cd C:\Users\manju\OneDrive\Desktop\Acadamix\Acadamix
+npm run dev
+## backend
+cd C:\Users\manju\OneDrive\Desktop\Acadamix\backend
+node server.js

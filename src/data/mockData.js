@@ -26,10 +26,47 @@ export const mockQuizzes = [
 export const mockAssignments = [
     { id: 1, courseId: 1, title: "Build a To-Do App", dueDate: "2025-08-18" },
     { id: 2, courseId: 3, title: "Implement a Linked List", dueDate: "2025-09-01" },
+    { id: 3, courseId: 1, title: "Database Design Project", dueDate: "2025-09-15" },
+    { id: 4, courseId: 2, title: "Research Paper on AI Ethics", dueDate: "2025-09-20" },
+    { id: 5, courseId: 3, title: "Algorithm Analysis", dueDate: "2025-09-25" },
 ];
 
 // --- NEW SUBMISSIONS DATA ---
 export const mockSubmissions = [
-    { id: 1, assignmentId: 1, studentId: 'S002', submittedAt: '2025-08-17', content: 'Here is my To-Do App submission.', grade: 'A-' },
-    { id: 2, assignmentId: 1, studentId: 'S003', submittedAt: '2025-08-18', content: 'Attached is my project file.', grade: 'B+' },
+    { 
+        id: 1, 
+        assignmentId: 1, 
+        studentId: 'S002', 
+        submittedAt: '2025-08-17', 
+        content: 'Here is my To-Do App submission.', 
+        grade: 'A-',
+        feedback: 'Excellent work! Great UI design and clean code structure. Consider adding unit tests.'
+    },
+    { 
+        id: 2, 
+        assignmentId: 1, 
+        studentId: 'S003', 
+        submittedAt: '2025-08-18', 
+        content: 'Attached is my project file.', 
+        grade: 'B+',
+        feedback: 'Good implementation overall. Some optimization opportunities in the algorithm logic.'
+    },
+    { 
+        id: 3, 
+        assignmentId: 2, 
+        studentId: 'S002', 
+        submittedAt: '2025-09-01', 
+        content: 'Linked list implementation with all methods.', 
+        grade: 'A',
+        feedback: 'Perfect implementation! All edge cases handled correctly.'
+    },
+    { 
+        id: 4, 
+        assignmentId: 3, 
+        studentId: 'S003', 
+        submittedAt: '2025-09-16', 
+        content: 'Database design with ERD diagrams.', 
+        grade: 'B',
+        feedback: 'Good design but missing some normalization. Review 3NF principles.'
+    },
 ];
